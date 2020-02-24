@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Html</title>
+        <style>
+            body{
+                 background: linear-gradient(to bottom right, #ff99ff 0%, #ffcc00 100%);
+                border:5px solid black;
+            }
+            h1{
+                 background: linear-gradient(to bottom right, #ff99ff 0%, #ffcc00 100%); 
+            }
+            p{
+                font-size: 24px;
+                font-family: cursive;
+                color:black;
+            }
+            h2{
+                font-size:30px;
+                color:brown;
+            }
+            pre{
+                font-size:25px;
+                background-color:azure;
+            }
+            table{
+                border-collapse: collapse;
+                text-align: center;
+                width:auto;
+            }
+            th{
+                border:1px solid black;
+                font-size:30px;
+            }
+            td{
+                border:1px solid black;
+                font-size: 25px;
+            }
+                li{
+            float:left;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            width:16.3%;
+                 height:20%
+        }
+       li a{
+            display:block;
+           font-size:25px;
+            padding:8px 16px;
+           text-align: center;
+           color:blueviolet;
+        }
+        a:active{
+            background-color:chartreuse;
+        }
+        a:hover{
+            background-color:brown;
+        }
+        a:visited{
+            background-color:cadetblue;
+        }
+        ul{
+            
+            margin:0;
+            padding:0;
+            overflow: hidden;
+           border:1px solid black;
+            width:100%;
+            position: fixed;
+        }
+        </style>
+    </head>
+    <body>
+         <ul style="list-style-type: none">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Aboutme.html">About me</a></li>
+        <li><a href="Location.html">Address</a></li>
+        <li><a href="Project.html">Oualification</a></li>
+        <li><a href="Syllabus.html">Syllabus</a></li>
+        <li><a href="Html.html">HTML</a></li>
+    </ul>
+        <pre><h1 style="text-align: center;font-size: 65px;color:crimson">HTML</h1></pre>
+        <p>
+        <a href="#C1">1.Syntax</a><br>
+        <a href="#C2">2.HTML Elements</a><br>
+        <a href="#C3">3.HTML Links</a><br>
+        <a href="#C4">4.HTML Buttons</a><br>
+        <a href="#C5">5.HTML List and Tables</a><br>
+        <a href="#C6">6.HTML Attributies</a><br>
+        <a href="#C7">7.HTML style</a><br>
+        <a href="#C8">8.Text Formation</a><br>
+        <a href="#C9">9.HTML Citation Elements</a><br>
+        <a href="#C10">10.HTML Comment</a><br>
+        <a href="#C11">11.HTML Links</a><br>
+        <a href="#C12">12.HTML Links Color</a><br>
+        <a href="#C13">13.HTML Link Bookmarks</a><br>
+        <a href="#C14">14.Image Maps</a><br>
+        <a href="#C15">15.HTML Background Image</a><br>
+        <a href="#C16">16.Iframe syntax</a><br></p>
+        <h2>HTML stands for Hyper Text Markup Language</h2>
+        <h2 id="C1">1.Syntax</h2>
+        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        
+        
+        &lt;h1&gt;This is Heading&lt;/h1&gt;
+        &lt;p&gt;This is paragraph&lt;/p&gt;
+        
+        
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </pre>
+        <h2 id="C2">2.HTML Elements</h2>
+        <pre>
+        Start tag    Element content     End tag
+         &lt;h1&gt;         Heading            &lt;/h1&gt;
+         &lt;p&gt;          Paragraph          &lt;/p&gt;
+         &lt;br&gt;         Line break
+         &lt;pre&gt;        Preformatted text  &lt;/pre&gt;</pre>
+        <h2>3.HTML Links</h2>
+        <pre>
+        &lt;a href="......."&gt;This is link&lt;/a&gt;
+        </pre>
+        <h2 id="C3">3.HTML Images</h2>
+        <pre>
+        &lt;img src="........" alt="NO image" width="..." height=".."&gt;</pre>
+        <h2 id="C4">4.HTML Buttons</h2>
+        <pre>
+        &lt;button&gt;Click me&lt;/button&gt;</pre>
+        <h2 id="C5">5.HTML Lists and Table</h2>
+        <pre>
+        <h2 style="color:darkcyan">HTML list</h2>
+        &lt;ul&gt;
+            &lt;li&gt;Coffee&lt;/li&gt;
+            &lt;li&gt;Tea&lt;/li&gt;
+            &lt;li&gt;Milk&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ol&gt;
+            &lt;li&gt;Coffee&lt;/li&gt;
+            &lt;li&gt;Tea&lt;/li&gt;
+            &lt;li&gt;Milk&lt;/li&gt;
+        &lt;/ol&gt;
+        <h2 style="color:darkcyan">HTML table</h2>
+        &lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+        <h2 id="C6">6.HTML Attribute</h2>
+        <pre>
+        <table>
+            <tr>
+            <th>Attribute</th>
+            <th>Description</th></tr>
+            <tr>
+                <td>alt</td>
+            <td>An alternative text for an image,when the image cannot displayed</td></tr>
+            <tr>
+            <td>disabled</td>
+            <td>An input element should be disabled</td></tr>
+            <tr>
+            <td>href</td>
+            <td>The URL(web address) for a link</td></tr>
+            <tr>
+            <td>id</td>
+            <td>A unique id for an element</td></tr>
+            <tr>
+            <td>src</td>
+            <td>The URL for an image</td></tr>
+            <tr>
+            <td>style</td>
+            <td>An inline CSS style for an element</td></tr>
+            <tr>
+            <td>title</td>
+            <td>Extra information about an element(displayed as a tool tip)</td></tr>
+        </table>
+        </pre>
+        <h2 id="C7">7.HTML Style</h2>
+        <pre>
+        &lt;tagname style="property:value;"&gt;
+        <h2 style="color:darkcyan">Background Color</h2>
+        &lt;body style="background-color:"red"&gt;....&lt;/body&gt;
+        <h2 style="color:darkcyan">Text Color</h2>
+        &lt;h1 style="color:blue"&gt;.....&lt/h1&gt;
+        <h2 style="color:darkcyan">Fonts</h2>
+         &lt;h1 style="font-family:courier"&gt;.....&lt/h1&gt;<h2 style="color:darkcyan">Text Size</h2>
+          &lt;h1 style="font-size:40px"&gt;.....&lt/h1&gt;
+          <h2 style="color:darkcyan">Text Alignment</h2>
+           &lt;h1 style="text-align:center"&gt;.....&lt/h1&gt;
+           </pre>
+        <h2 id="C8">8.Text Formation</h2>
+        <pre>
+        <table>
+            <tr>
+            <th>Tag</th>
+            <th>Description</th></tr>
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>Bold text</td></tr>
+            <tr><td>&lt;strong&gt;</td>
+                <td>Important text</td></tr>
+            <tr><td>&lt;i&gt;</td>
+                <td>Italic text</td></tr>
+            <tr><td>&lt;em&gt;</td>
+                <td>Emphasized text</td></tr>
+            <tr><td>&lt;mark&gt;</td>
+                <td>Marked text</td></tr>
+            <tr><td>&lt;small&gt;</td>
+                <td>Small text</td></tr>
+        <tr><td>&lt;del&gt;</td>
+            <td>Deleted text</td></tr>
+            <tr><td>&lt;ins&gt;</td>
+                <td>Inserted text</td></tr>
+            <tr><td>&lt;sub&gt;</td>
+                <td>Subscript text</td></tr>
+            <tr><td>&lt;sup&gt;</td>
+                <td>Superscript text</td></tr>
+        </table>
+        </pre>
+        <h2 id="C9">9.HTML Citation Elements</h2>
+        <pre>
+        <h2 style="color:darkcyan">HTML Abbreviations</h2>
+        &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+        <h2 style="color:darkcyan">HTML Contact Information</h2>
+        &lt;address&gt;
+        ......
+        .....
+        &lt;/address&gt;
+        <h2 style="color:darkcyan">HTML Work Title</h2>
+        &lt;p&gt;&lt;cite&gt;IIIT Kota&lt;/cite&gt;is in Jaipur
+        <h2 style="color:darkcyan">HTML Bi-Directional Override</h2>
+        &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</pre>
+        <h2 id="C10">10.HTML Comment</h2>
+        <pre>
+        &lt;!-- Do not display this image at the moment--&gt;</pre>
+        <h2 id="C11">11.HTML Links</h2>
+        <pre>
+        <h2 style="color:darkcyan">HTML Links-The target attribute</h2>
+        &lt;a href="......" target="_blank"&gt;....&lt;/a&gt;<h2 style="color:darkcyan">HTML Links-Image as a link</h2>
+        &lt;a href="...."&gt;&lt;img src="..." alt="HTML tutorial" &gt;&lt;/a&gt;
+        <h2 style="color:darkcyan">Button as link</h2>
+        &lt;button onclick="document.location="....."&gt;....&lt;/button&gt;</pre>
+        <h2 id="C12">12.HTML Links Color</h2>
+        <pre>
+        <h2 style="color:darkcyan">HTML links color</h2>
+        &lt;style&gt;
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+&lt;/style&gt;
+<h2 style="color:darkcyan">Links button</h2>
+&lt;style&gt;
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+&lt;/style&gt;</pre>
+        <h2 id="C13">13.HTML Link Bookmarks</h2>
+        <pre>
+        &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+        &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</pre>
+        <h2 id="C14">14.Image Maps</h2>
+        <pre>
+        &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+&lt;map name="workmap"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+  &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+  &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;
+&lt;/map&gt;</pre>
+        <h2 id="C15">15.HTML Background Images</h2>
+        <pre>
+        &lt;div style="background-image: url('img_girl.jpg');"&gt;
+        or
+        &lt;style&gt;
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+&lt;/style&gt;</pre>
+        <h2 id="C16">16.Iframe Syntax</h2>
+        <pre>
+        &lt;iframe src="...."&gt;&lt;/iframe&gt;</pre>
+        
+    </body>
+</html>
